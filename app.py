@@ -173,7 +173,7 @@ def predict():
     _Property = request.form['Property']
     
     #categorical data
-   select_state = {'CA':3,'OH':22,'FL':6,'NY':21,'PA':25,'MA':13,'TX':29,'DC':5,'AL':1,'OK':23,'VA':31,
+    select_state = {'CA':3,'OH':22,'FL':6,'NY':21,'PA':25,'MA':13,'TX':29,'DC':5,'AL':1,'OK':23,'VA':31,
     'MD':14,'RI':26,'OR':24,'TN':28,'MI':15,'GA':7,'MT':17,'CO':4,'NM':19,'UT':30,'IA':8,'SC':27,
     'KY':12,'NV':20,'MO':16,'IN':10,'IL':9,'NJ':18,'AR':2,'AK':0,'WI':33,'WA':32,'KS':11}
     _state=select_state.get(_state,"Invalid state")
@@ -187,7 +187,7 @@ def predict():
     select_ms = {'Married':1,'Single':2,'Divorced':0}
     _marital_status=select_ms.get(_marital_status,"Invalid marital_status")
 
-    select_occupation = {'Government job':4,'IT':2,'Accountant':0,'Business':1,'Manager':3, 'public sector':5, 'primary sector/agriculture':6, 'Unemployed': 7}
+    select_occupation = {'NYPD':4,'IT':2,'Accountant':0,'Business':1,'Manager':3}
     _occupation=select_occupation.get(_occupation,"Invalid occupation")
 
     select_loan_type = {'Personal':3,'Auto':0,'Credit':1,'Home':2}
