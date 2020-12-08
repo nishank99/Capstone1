@@ -173,18 +173,17 @@ def predict():
     _Property = request.form['Property']
     
     #categorical data
-    select_state = {'Jammu&Kashmir':1,'Ladakh':2,'Punjab':3,'Gujarat':4,'Maharashtra':5,'Jharkhand':6,'Kerla':7,'WB':8,'Telangana':9,'MP':10,'UP':11,
-    'AP':12,'Delhi':13,'Orissa':14,'TN':15,'Karnataka':16,'Chattisgarh':17,'Bihar':18,'Haryana':19,'Rajasthan':20,'Sikkim':21,'Arunachal':22,'ASssam':23,
-    'Meghalaya':24,'Nagaland':25,'Tripura':26,'Mizoram':27}
+   select_state = {'CA':3,'OH':22,'FL':6,'NY':21,'PA':25,'MA':13,'TX':29,'DC':5,'AL':1,'OK':23,'VA':31,
+    'MD':14,'RI':26,'OR':24,'TN':28,'MI':15,'GA':7,'MT':17,'CO':4,'NM':19,'UT':30,'IA':8,'SC':27,
+    'KY':12,'NV':20,'MO':16,'IN':10,'IL':9,'NJ':18,'AR':2,'AK':0,'WI':33,'WA':32,'KS':11}
     _state=select_state.get(_state,"Invalid state")
 
     select_gender = {'Male':1,'Female':0}
     _gender=select_gender.get(_gender,"Invalid gender")
   
-    select_race = {'Non-Coapplicant':4,'Indian':6,'Not applicable':5,'Asian':1,'American':0,
-    'European':3,' African':2}
+    select_race = {'Non-Coapplicant':4,'White':6,'Not applicable':5,'Asian':1,'American':0,
+    'Native Hawaian':3,'Black African':2}
     _race=select_race.get(_race,"Invalid race")
-
     select_ms = {'Married':1,'Single':2,'Divorced':0}
     _marital_status=select_ms.get(_marital_status,"Invalid marital_status")
 
